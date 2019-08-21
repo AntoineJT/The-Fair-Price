@@ -4,13 +4,14 @@ import java.util.*;
 
 public class Difficulty {
 
-    public enum Difficuties {
-
-        EASY(1), MEDIUM(5000), HARD(10000);
+    public enum Difficulties {
+        EASY(1),
+        MEDIUM(5000),
+        HARD(10000);
 
         private int maxPrice;
 
-        Difficuties(int maxPrice) {
+        Difficulties(int maxPrice) {
             this.maxPrice = maxPrice;
         }
 
@@ -30,8 +31,7 @@ public class Difficulty {
         System.out.println("Difficulty : ");
 
         for (Difficuties d : Difficuties.values()) {
-            StringBuilder stringBuilder = new StringBuilder(" - ");
-            stringBuilder.append(d);
+            StringBuilder stringBuilder = new StringBuilder(" - ").append(d);
             System.out.println(stringBuilder);
         }
 
