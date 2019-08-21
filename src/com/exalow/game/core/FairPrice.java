@@ -23,7 +23,7 @@ public class FairPrice {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        maxPrice = Difficulty.Difficuties.valueOf(difficulty).getMaxPrice();
+        maxPrice = Difficulty.Difficulties.valueOf(difficulty).getMaxPrice();
         price = random.nextInt(maxPrice);
 
         System.out.println("\nChoose a number between 0 <-> " + maxPrice);

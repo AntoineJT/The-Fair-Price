@@ -20,7 +20,7 @@ public class Difficulty {
         }
     }
 
-    private Difficuties d;
+    private Difficulties d;
     private static String selectedDifficulty;
 
     public void Difficulty() {
@@ -30,8 +30,9 @@ public class Difficulty {
 
         System.out.println("Difficulty : ");
 
-        for (Difficuties d : Difficulties.values()) {
-            StringBuilder stringBuilder = new StringBuilder(" - ").append(d);
+        for (Difficulties d : Difficulties.values()) {
+            StringBuilder stringBuilder = new StringBuilder(" - ")
+                    .append(d);
             System.out.println(stringBuilder);
         }
 
